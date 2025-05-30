@@ -16,6 +16,7 @@ nav {
     margin: 0 auto;
     display: flex;
     padding: 10px;
+     border: 4px silver ridge;
     margin-bottom: 20px;
 }
 
@@ -49,9 +50,11 @@ main {
     background: rgb(245, 238, 219);
     display: flex;
     margin-top: 20px;
+     border: 4px silver ridge;
 }
 
 .sidebar {
+  
     margin-right: 25px;
     padding: 10px;
 }
