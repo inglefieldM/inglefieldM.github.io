@@ -153,8 +153,10 @@ h2, h3 {
   }
 
   .sidebar-img {
-    width: 100%;
-    height:auto;
+    width: 60%;
+    height: 60%; 
+    position: relative;
+    left: 60px;
   }
 
   p,
