@@ -18,6 +18,7 @@ nav {
     padding: 10px;
      border: 4px silver ridge;
     margin-bottom: 20px;
+     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
@@ -51,6 +52,7 @@ main {
     display: flex;
     margin-top: 20px;
      border: 4px silver ridge;
+      border-radius: 1000px;
 }
 
 .sidebar {
@@ -61,6 +63,8 @@ main {
 
 .sidebar-img {
     width: 200px;
+    border: 4px gold ridge;
+    border-radius: 10px;
 }
 
 .content {
@@ -70,11 +74,93 @@ main {
 
 /* interests section styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px goldenrod ridge;
+    border-radius: 20px;
     padding: 8px;
     margin-top: 20px;
+    background-color: aquamarine;
+     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h2, h3 {
     margin: 0px;
+}
+
+/* Portfolio styles */
+.content h1 {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(31, 215, 239);
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#portfolio li {
+  background: #db4444;
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px gold ridge;
+  margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+  background: #f67f7f;
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: #de7a7a;
+}
+
+
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+  main {
+    height: 100ch;
+    zoom: 1.5;
+    display: grid;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  #all-contents {
+    height: 100ch;
+    margin: none;
+  }
+
+  a {
+    font-size: 42px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-img {
+    width: 100%;
+  }
+
+  p,
+  li {
+    font-size: 24px;
+  }
+
+  .content {
+    align-content: center;
+    justify-content: center;
+  }
 }
