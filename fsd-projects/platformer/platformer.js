@@ -32,7 +32,7 @@ $(function () {
 
     // TODO 2 - Create Platforms
     createPlatform (100,400,200,400, "hotpink");
-    createPlatform (0,0,300,300, "hotpink");
+    createPlatform (0,0,300,200, "hotpink");
     createPlatform (0,500,300,400, "hotpink");
     createPlatform (300,700,1100,50);
     createPlatform (400,200,900,10);
