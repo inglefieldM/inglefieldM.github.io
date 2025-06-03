@@ -154,7 +154,8 @@ h2, h3 {
 
   .sidebar-img {
     width: 45%;
-    align-items: center;
+    position: relative;
+    left: 90px;
   }
 
   p,
