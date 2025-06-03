@@ -44,6 +44,8 @@ h1 {
 a {
     text-decoration: none;
     color: #a2f3ff;
+    background-color: rgb(188, 188, 31);
+    border-radius: 5px;
 }
 
 /* main container area beneath menu */
