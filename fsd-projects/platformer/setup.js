@@ -100,5 +100,5 @@ var collectableList = {
   steve: { image: "images/collectables/steve-head.png" },
   database2: { image: "images/collectables/database2.PNG" },
   greaa: { image: "images/collectables/greaa.PNG"},
-  greny: {image: "images/collectables/greny4.PNG"}
+  greny: {image: "images/collectables/greny4.PNG"},
 };
