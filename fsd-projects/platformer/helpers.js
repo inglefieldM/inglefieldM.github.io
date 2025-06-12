@@ -491,8 +491,9 @@ function drawCannons() {
     ctx.restore(); //this unrotates the canvas so the canvas is straight, but now since you did that the picture looks rotated
   }
 }
-
+//if all collectables are collected, end level and go to another?- M.I.
 function drawCollectables() {
+  //modded
   for (var i = 0; i < collectables.length; i++) {
     if (collectables[i].collected !== true) {
       //draw on screen if not collected
@@ -508,6 +509,7 @@ function drawCollectables() {
       if (collectables[i].alpha > 0.4) {
         collectables[i].alpha = collectables[i].alpha - 0.007;
       }
+    
       ctx.globalAlpha = collectables[i].alpha;
       ctx.drawImage(
         collectables[i].image,
