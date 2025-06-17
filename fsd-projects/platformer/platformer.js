@@ -34,14 +34,14 @@ $(function () {
     createPlatform (100,400,200,400, "hotpink");
     createPlatform (0,0,300,200, "hotpink");
     createPlatform (0,500,300,400, "hotpink");
-    createPlatform (300,700,1100,50);
-    createPlatform (400,200,900,10);
-    createPlatform (300,500,300,10);
-    createPlatform (600,620,100,80);
-    createPlatform (910,500,580,200);
-    createPlatform (1300,300,100,10);
-    createPlatform (1200,380,100,10);
-    createPlatform (990,320,100,10);
+    createPlatform (300,700,1100,50, "green");
+    createPlatform (400,200,900,10, "blue");
+    createPlatform (300,500,300,10, "aquamarine");
+    createPlatform (600,620,100,80, "purple");
+    createPlatform (910,500,580,200, "black");
+    createPlatform (1300,300,100,10, "yellow");
+    createPlatform (1200,380,100,10, "orange");
+    createPlatform (990,320,100,10, "red");
 
    // TODO 3 - Create Collectables
     createCollectable("greny",400,600,0.4,1);
