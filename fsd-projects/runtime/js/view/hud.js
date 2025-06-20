@@ -35,7 +35,7 @@
         
         integrity = new createjs.Container();
         background = draw.rect(104, 20, '#CCC');
-        draw.rect(102, 18, '#FFF', null, null, 1, 1, background);
+        draw.rect(102, 60, '#FFF', null, null, 1, 1, background);
         integrity.addChild(background);
         
         txtScore = draw.textfield('score : 000', "19px Arial", '#666', 'left');
