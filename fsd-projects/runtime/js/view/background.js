@@ -43,8 +43,18 @@ var background = function (window) {
             background.addChild(backgroundFill);
             
             // TODO 2: - Add a moon and starfield
-            
-            
+            var friend = draw.bitmap("img/database2.PNG");
+            friend.x = 900;
+            friend.y = 500;
+            friend.scaleX = 5.0;
+            friend.scaleY = 5.0;
+            background.addChild(friend);
+           for(let i = 0; i < 101; i++){
+            var circle =  draw.circle(10, "white", "LightGray", 2);
+            circle.x = canvasWidth * Math.random();
+            circle.y = groundY * Math.random();
+            background.addChild(circle);
+           }
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             
             
