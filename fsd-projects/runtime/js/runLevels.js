@@ -53,9 +53,50 @@ var runLevels = function (window) {
               enemy.fadeOut();
             }
           }
-                 function createReward (){
-                  
-                 }
+    function createReward (x, y) {
+    var reward = 
+  game.createGameItem("reward", 30);
+    var greenCircle = draw.circle(5, 
+      "greenyellow");
+    greenCircle.x = 0;
+    greenCircle.y = 0;
+    reward.velocityX = -1;
+    reward.rotationalVelocity = 7;
+    reward.addChild(greenCircle);
+    reward.x = x
+    reward.y = groundY - y;
+    game.addGameItem(reward);
+            reward.onPlayerCollision = function (){
+              game.changeIntegrity(50);
+              reward.fadeOut();
+            }
+            reward.onProjectileCollision = function (){
+              reward.fadeOut();
+            }
+    }
+
+    function createMarker (x, y) {
+    var marker = 
+  game.createGameItem("marker", 30);
+    var blueSquare = draw.rect(40, 40, 
+      "blue");
+    blueSquare.x = -28;
+    blueSquare.y = -28;
+    marker.velocityX = -0.6;
+    marker.rotationalVelocity = 7;
+    marker.addChild(blueSquare);
+    marker.x = x
+    marker.y = groundY - y;
+    game.addGameItem(marker);
+            marker.onPlayerCollision = function (){
+              startLevel();
+            }
+            marker.onProjectileCollision = function (){
+              startLevel();
+            }
+          }
+          createMarker(1200, 50)
+              createReward(1100, 50);  
     createEnemy(400, 50);
     createEnemy(700, 50);
     createEnemy(900, 50);
